@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧾 Receipt Tracker
 
-## Getting Started
+A neo-brutalist finance tracker with thermal receipt printer aesthetics. Built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+![Demo](https://user-images.githubusercontent.com/your-username/receipt-tracker-demo.gif)
+
+## ✨ Features
+
+- **Smart Command Bar** - Loose Indonesian input parsing (`kopi 25k`, `gajian 5jt`, `saldo 1jt`)
+- **Thermal Print Aesthetic** - Monochrome design with torn paper edges and JetBrains Mono typography
+- **Per-Card Reset** - Individual reset buttons for Balance, Week, Month, and Income cards
+- **Spreadsheet View** - Sortable & filterable transaction table
+- **Print to Image** - Export receipts as PNG
+- **Sound Effects** - Thermal printer audio feedback
+- **100% Client-Side** - All data stored in localStorage
+
+## 🚀 Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Shadcn/UI**
 
-## Learn More
+## 📝 Usage
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Result |
+|---------|--------|
+| `kopi 25k` | Add expense Rp 25.000 |
+| `gajian 5jt` | Add income Rp 5.000.000 |
+| `saldo 1jt` | Set initial balance |
+| `reset` | Clear all data |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
